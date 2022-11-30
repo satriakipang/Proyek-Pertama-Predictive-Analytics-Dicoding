@@ -2,7 +2,7 @@
 
 ## Domain Proyek
 
-Perkembangan *Machine Learning* yang sangat pesar dapat membantu manusia dalam menyelesaikan permasalahan yang rumit dengan komputasi komputer. Pada proyek ini penulis ingin menggunakan *Machine Learning* untuk memprediksi diabetes pada pasien. 
+Perkembangan *Machine Learning* yang sangat pesat dapat membantu manusia dalam menyelesaikan permasalahan yang rumit dengan komputasi komputer. Pada proyek ini penulis ingin menggunakan *Machine Learning* untuk memprediksi diabetes pada pasien. 
 
 Diabetes melitus (DM) didefinisikan sebagai suatu penyakit atau gangguan metabolisme kronis dengan multi etiologi yang ditandai dengan kadar gula darah di atas atau sama dengan 200 mg/dl, dan kadar gula darah puasa di atas atau sama dengan 126 mg/dl, disertai dengan gangguan metabolisme karbohidrat, lipid, dan protein sebagai akibat insufisiensi fungsi insulin. Insufisiensi fungsi insulin dapat disebabkan oleh gangguan atau defisiensi produksi insulin oleh sel-sel beta Langerhans kelenjar pankreas, atau disebabkan oleh kurang responsifnya sel-sel tubuh terhadap insulin [Kemenkes RI](https://p2ptm.kemkes.go.id/informasi-p2ptm/penyakit-diabetes-melitus). DM dikenal sebagai silent killer karena sering tidak disadari oleh penyandangnya dan saat diketahui sudah terjadi komplikasi (Kemenkes RI, 2014). DM dapat menyerang hampir seluruh sistem tubuh manusia, mulai dari kulit sampai jantung yang menimbulkan komplikasi. Penyakit Diabetes Mellitus merupakan ranking keenam penyebab kematian di Dunia, hal ini diungkapkan oleh dunia World Health Organization (WHO). 
 
@@ -12,7 +12,7 @@ Oleh karena DM merupakan penyakit yang sangat berbahaya. Penulis ingin mempredik
 ## Business Understanding
 Berdasarkan latar belakang yang sudah dipaparkan sebelumnya, berikut rincian masalah yang dapat diselesaikan dalam proyek ini :
 - Bagaimana cara membuat model machine learning untuk mengklasifikasikan pasien yang menderita diabetes dan tidak?
-- Apa faktor yang membuat pasien menglami diabetes?
+- Apa faktor yang membuat pasien mengalami diabetes?
 
 
 ### Goals
@@ -26,7 +26,7 @@ Berdasarkan latar belakang yang sudah dipaparkan sebelumnya, berikut rincian mas
     - *AdaBoost Classifier*
 
 ## Data Understanding
-Dataset yang digunakan untuk memprediksi pasien diabete yang diambil dari platfrom kaggle.com yang di publikasikan oleh AKSHAY DATTATRAY KHARE. Dataset Dataset ini berasal dari National Institute of Diabetes and Digestive and Kidney Diseases. 
+Dataset yang digunakan untuk memprediksi pasien diabete yang diambil dari platform kaggle.com yang dipublikasikan oleh AKSHAY DATTATRAY KHARE. Dataset Dataset ini berasal dari National Institute of Diabetes and Digestive and Kidney Diseases. 
 Tujuan dari dataset ini adalah untuk memprediksi secara diagnostik apakah seorang pasien menderita diabetes, berdasarkan pengukuran diagnostik tertentu yang termasuk dalam kumpulan data. Dataset ini terdiri dari 1 file csv. 
 
 ### Informasi data:
@@ -49,7 +49,7 @@ Pada berkas berisikan informasi pasien sebanyak 768 data dengan 9 kolom serta te
 ### Berikut rangkuman `statistik deskriptif` dari fitur dalam dataset: <br> <br>
 <img src="image/statistik_deskriptif_numeric.png" style="zoom:150%;" /><br>
 
-#### Interpertasi Deskripsi statstik data
+#### Interpretasi Deskripsi statistik data
 Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nilai minimum yaitu 0. Hal tersebut tidak mungkin, sebab manusia tidak dapat mencapai nol untuk kadar glukosa, tekanan darah, ketebalan kulit, kadar insulin, dan BMI. Maka nilai nol pada kolom tersebut akan dihapus
 <img src="image/statistik_deskriptif_numeric_revisi.png" style="zoom:150%;" /><br>
 
@@ -106,7 +106,7 @@ Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabe
 - Pasien yang memiliki glucose tinggi
 - Pasien yang memiliki BloodPressure tinggi
 - Pasien yang memiliki BMI tinggi
-- Pasein yang memiliki DiabetesPedigreeFunction tinggi
+- Pasien yang memiliki DiabetesPedigreeFunction tinggi
 - Pasien yang memiliki Age lebih tua
 
 ## Data Preparation
@@ -125,7 +125,7 @@ Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabe
  Hasil yang di peroleh adalah tidak ada data yang duplicated
 
 
-- Balancing Dataset
+- Balancing Dataset <br>
  <img src="image\Balancing_Dataset.png" style="zoom:70%;" /><br>
   Pada tahapan Balancing Dataset diperlukan untuk menyeimbangan data Outcome yang tidak seimbang, jika tidak seimbangan maka model cenderung mengarah pada kategori yang lebih banyak datanya. Oleh sebab itu tahapan Balancing Dataset dilakukan, teknik ini membuat data dummy atau data buatan. 
 
@@ -136,8 +136,8 @@ Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabe
 
 
 ## Modeling
-Algoritma pada *Machine Learning* yang digunakan anatara lain : 
-- **K-Neighbors Classifier**, K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Pada penelitian ini merupakan masalah klasifikasi makan akan membandingkan 2 data. Proyek ini menggunakan [sklearn.neighbors.KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html?highlight=kneighborsclassifier#sklearn.neighbors.KNeighborsClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini yaitu n_neighbors` = Jumlah k tetangga tedekat.
+Algoritma pada *Machine Learning* yang digunakan antara lain : 
+- **K-Neighbors Classifier**, K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Pada penelitian ini merupakan masalah klasifikasi makan akan membandingkan 2 data. Proyek ini menggunakan [sklearn.neighbors.KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html?highlight=kneighborsclassifier#sklearn.neighbors.KNeighborsClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini yaitu n_neighbors` = Jumlah k tetangga terdekat.
     
 - **Random Forest Classifier**, merupakan salah satu algoritma populer yang digunakan karena kesederhanaannya dan memiliki stabilitas yang baik. Proyek ini menggunakan [sklearn.ensemble.RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html?highlight=sklearn+ensemble+randomforestclassifier#sklearn.ensemble.RandomForestClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah :
      `criterion` = Fungsi untuk mengukur kualitas split..
@@ -163,7 +163,7 @@ Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan me
 
 - *Precision*
 
-  *Metrics* ini mengukur tingkat ketepatan antara informasi yang diminta oleh pengguna dengan jawaban yang diberikan oleh sistem. Untuk menghitung nilai dari *precision* dapat dilihat pada formula dibahwah ini. 
+  *Metrics* ini mengukur tingkat ketepatan antara informasi yang diminta oleh pengguna dengan jawaban yang diberikan oleh sistem. Untuk menghitung nilai dari *precision* dapat dilihat pada formula di bawah ini. 
 
   <img src="image\precision.png" style="zoom:80%;" /><br>
 
@@ -183,18 +183,18 @@ Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan me
 
   <img src="image/f1_score.png" style="zoom: 40%;" /><br>
 
-Selanjutnya model Random Forest Classifier, akan di hitung *metrics* f1-score dan recall.  
+Selanjutnya model Random Forest Classifier, akan dihitung *metrics* f1-score dan recall. <br>
 <img src="image\Confusion_Matrix_untuk_Random_Forest.png" style="zoom:70%;" /><br>
 <img src="image\Nilai_Akurasi_Precision_Recall_F1.png" style="zoom:70%;" /><br>
 
 ## Kesimpulan
-    Kesimpulan dari proyek prediksi pasien diabetes dan tidak diabetes dengan menggunakan tiga model *Machine Learning*, yaitu bahwa diantara *K-Neighbors Regressor Classifier*, *Random Forest Classifier*, dan *AdaBoost Classifier*. Diperolej bahwa algoritma *Random Forest Classifier* lebih baik dibandingkan yang lainnya. Hal ini dapat dilihat dari performance model yang tinggi dibandingkan algoritma yang lainnya. 
-    
-   Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabetes memiliki kriteria yaitu :
+Kesimpulan dari proyek prediksi pasien diabetes dan tidak diabetes dengan menggunakan tiga model *Machine Learning*, yaitu bahwa diantara *K-Neighbors Regressor Classifier*, *Random Forest Classifier*, dan *AdaBoost Classifier*. Diperoleh bahwa algoritma *Random Forest Classifier* lebih baik dibandingkan yang lainnya. Hal ini dapat dilihat dari performance model yang tinggi dibandingkan algoritma yang lainnya. 
+
+Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabetes memiliki kriteria yaitu :
     - Pasien yang memiliki glucose tinggi
     - Pasien yang memiliki BloodPressure tinggi
     - Pasien yang memiliki BMI tinggi
-    - Pasein yang memiliki DiabetesPedigreeFunction tinggi
+    - Pasien yang memiliki DiabetesPedigreeFunction tinggi
     - Pasien yang memiliki Age lebih tua
 
 
@@ -204,4 +204,3 @@ Selanjutnya model Random Forest Classifier, akan di hitung *metrics* f1-score da
 2. [Scikit-learn](https://scikit-learn.org/). *Documentation*
 3. [Imbalanced-learn](https://imbalanced-learn.org/stable/). *Documentation*
 4. [Kemenkes RI](https://p2ptm.kemkes.go.id/informasi-p2ptm/penyakit-diabetes-melitus) 
-
