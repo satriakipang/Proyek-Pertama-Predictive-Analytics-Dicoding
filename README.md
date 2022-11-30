@@ -68,7 +68,7 @@ Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nila
 
 ### Berikut Visualisasi data Categorical Features pada plot : <br>
 <img src="image/Visualisasi _Categorical_Features1.png" style="zoom:70%;" /> 
-<img src="image/Visualisasi _Categorical_Features2.png" style="zoom:70%;" /><br>
+<img src="image/Visualisasi _Categorical_Features2.png" style="zoom:70%;" />
 
 #### Interpretasi plot
 - Melihat hasil data Pregnancies dan tidak ada korelasinya maka kolom data Pregnancies di hapus. <br><br><br>
@@ -188,17 +188,17 @@ Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan me
 Selanjutnya model Random Forest Classifier, akan dihitung *metrics* f1-score dan recall. <br><br>
 
 <img src="image\Confusion_Matrix_untuk_Random_Forest.png" style="zoom:70%;" /><br>
-<img src="image\Nilai_Akurasi_Precision_Recall_F1.png" style="zoom:70%;" /><br>
+<img src="image\Nilai_Akurasi_Precision_Recall_F1.png" style="zoom:70%;" /><br><br><br>
 
 ## Kesimpulan
 Kesimpulan dari proyek prediksi pasien diabetes dan tidak diabetes dengan menggunakan tiga model *Machine Learning*, yaitu bahwa diantara *K-Neighbors Regressor Classifier*, *Random Forest Classifier*, dan *AdaBoost Classifier*. Diperoleh bahwa algoritma *Random Forest Classifier* lebih baik dibandingkan yang lainnya. Hal ini dapat dilihat dari performance model yang tinggi dibandingkan algoritma yang lainnya. 
 
-Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabetes memiliki kriteria yaitu :
-    - Pasien yang memiliki glucose tinggi
-    - Pasien yang memiliki BloodPressure tinggi
-    - Pasien yang memiliki BMI tinggi
-    - Pasien yang memiliki DiabetesPedigreeFunction tinggi
-    - Pasien yang memiliki Age lebih tua
+Pada projek ini kita memproleh informasi ciri ciri atau faktor yang membuat pasien menderita diabetes memiliki kriteria yaitu :
+- Pasien yang memiliki glucose tinggi
+- Pasien yang memiliki BloodPressure tinggi
+- Pasien yang memiliki BMI tinggi
+- Pasien yang memiliki DiabetesPedigreeFunction tinggi
+- Pasien yang memiliki Age lebih tua
 
 
 # Referensi
