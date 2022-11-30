@@ -113,7 +113,7 @@ Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabe
 
 ## Data Preparation
 
-- Mengatasi *outlier*
+- Mengatasi *outlier* <br>
   Pada tahapan ini berguna untuk menghapus data tidak normal pada dataset yang telah di buat pada boxplot.  
 
 
@@ -132,7 +132,7 @@ Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabe
   Pada tahapan Balancing Dataset diperlukan untuk menyeimbangan data Outcome yang tidak seimbang, jika tidak seimbangan maka model cenderung mengarah pada kategori yang lebih banyak datanya. Oleh sebab itu tahapan Balancing Dataset dilakukan, teknik ini membuat data dummy atau data buatan. 
 
 
-- Membagi data menjadi data *training* dan *testing*
+- Membagi data menjadi data *training* dan *testing* <br>
   Tahapan ini bertujuan agar model yang dilatih dapat diuji dengan data yang berbeda dari data yang digunakan dalam pelatihan. Data dapat dibagi menjadi dua bagian yaitu *training* dan *testing*. Pembagian datanya yaitu persentase untuk *training* sebesar 80% dan sisanya 20% untuk *testing*. Fungsi [train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) pada library sklearn yang akan digunakan untuk menangani tahapan ini.
 
 
@@ -142,7 +142,7 @@ Algoritma pada *Machine Learning* yang digunakan antara lain :
 - **K-Neighbors Classifier**, K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Pada penelitian ini merupakan masalah klasifikasi makan akan membandingkan 2 data. Proyek ini menggunakan [sklearn.neighbors.KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html?highlight=kneighborsclassifier#sklearn.neighbors.KNeighborsClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini yaitu `n_neighbors` = Jumlah k tetangga terdekat.
     
 - **Random Forest Classifier**, merupakan salah satu algoritma populer yang digunakan karena kesederhanaannya dan memiliki stabilitas yang baik. Proyek ini menggunakan [sklearn.ensemble.RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html?highlight=sklearn+ensemble+randomforestclassifier#sklearn.ensemble.RandomForestClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah :
-     `criterion` = Fungsi untuk mengukur kualitas split..
+     `criterion` = Fungsi untuk mengukur kualitas split.
      `n_estimators` = Jumlah tree pada forest.
      `max_depth` = Kedalaman maksimum setiap tree.
      `random_state` = Mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi.
@@ -187,7 +187,7 @@ Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan me
 
 Selanjutnya model Random Forest Classifier, akan dihitung *metrics* f1-score dan recall. <br>
 
-<img src="image\Confusion_Matrix_untuk_Random_Forest.png" style="zoom:70%;" /><br>
+<img src="image\Confusion_Matrix_untuk_Random_Forest.png" style="zoom:70%;" /><br><br>
 <img src="image\Nilai_Akurasi_Precision_Recall_F1.png" style="zoom:70%;" /><br><br><br>
 
 ## Kesimpulan
