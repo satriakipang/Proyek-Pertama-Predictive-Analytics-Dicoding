@@ -51,7 +51,7 @@ Pada berkas berisikan informasi pasien sebanyak 768 data dengan 9 kolom serta te
 
 #### Interpretasi Deskripsi statistik data
 Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nilai minimum yaitu 0. Hal tersebut tidak mungkin, sebab manusia tidak dapat mencapai nol untuk kadar glukosa, tekanan darah, ketebalan kulit, kadar insulin, dan BMI. Maka nilai nol pada kolom tersebut akan dihapus. <br>
-<img src="image/statistik_deskriptif_numeric_revisi.png" style="zoom:150%;" /><br>
+<img src="image/statistik_deskriptif_numeric_revisi.png" style="zoom:150%;" /><br><br><br>
 
 
 ### Berikut Visualisasi data dengan Boxplot: <br>
@@ -63,7 +63,7 @@ Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nila
 - Pada boxplot Pregnancies, plot menunjukkan outlier untuk jumlah kehamilan 13,15, 16, dan 17, data tersebut tidak dihapus karena seorang wanita mungkin melahirkan 17 anak.
 - Pada boxplot Insulin, kadar insulin cukup berfluktuasi. Maka, tidak akan dianggap sebagai outlier
 - Pada boxplot DiabetesPedigreeFunction, nilainya bervariasi berdasarkan riwayat keluarga. Maka, tidak akan menghapusnya.
-- Pada boxplot Age, nilai umur terdapat outlier tetapi orang dengan usia seperti itu bisa ada. Maka, tidak akan dihapus. <br>
+- Pada boxplot Age, nilai umur terdapat outlier tetapi orang dengan usia seperti itu bisa ada. Maka, tidak akan dihapus. <br><br><br>
 
 
 ### Berikut Visualisasi data Categorical Features pada plot : <br>
@@ -71,7 +71,7 @@ Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nila
 <img src="image/Visualisasi _Categorical_Features2.png" style="zoom:70%;" /><br>
 
 #### Interpretasi plot
-- Melihat hasil data Pregnancies dan tidak ada korelasinya maka kolom data Pregnancies di hapus. <br>
+- Melihat hasil data Pregnancies dan tidak ada korelasinya maka kolom data Pregnancies di hapus. <br><br><br>
 
 
 ### Berikut Visualisasi data Numerical Features pada histogram :
@@ -81,7 +81,7 @@ Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nila
 #### Interpretasi histogram
 - Beberapa kolom berdistribusi miring ke kanan
 - Distribusi kolom yang berdistribusi normal adalah Glucose, BloodPressure, SkinThickness dan BMI.
-- Distribusi harga miring ke kanan (right-skewed). adalah Insulin, DiabetesPedigreeFunction dan Age.<br>
+- Distribusi harga miring ke kanan (right-skewed). adalah Insulin, DiabetesPedigreeFunction dan Age.<br><br><br>
 
 
 ### Multivariate Analysis
@@ -92,14 +92,14 @@ Melihat Hubungan Antara Numerical Features Dengan Fungsi Tujuan Yaitu Outcome.
 <img src="image/Multivariate_Analysis4.png" style="zoom:70%;" /><br>
 
 #### Interpertasi
-- Pada grafik perbandingan terdapat perbedaan yang terkena diabetes dan tidak diabetes, yaitu pada Glucose, BloodPressure, BMI, DiabetesPedigreeFunction, Age.<br>
+- Pada grafik perbandingan terdapat perbedaan yang terkena diabetes dan tidak diabetes, yaitu pada Glucose, BloodPressure, BMI, DiabetesPedigreeFunction, Age.<br><br><br>
 
 
 ### Heat Map
 <img src="image/Heat_Map.png" style="zoom:70%;" /><br>
 
 #### Interpertasi
-- Pada hasil heat map dapat dilihat bahwa diabetes berkorelasi dengan glucose, bmi dan age.
+- Pada hasil heat map dapat dilihat bahwa diabetes berkorelasi dengan glucose, bmi dan age.<br><br><br>
 
 ### Kesimpulan
 Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabetes memiliki kriteria yaitu :
@@ -108,6 +108,8 @@ Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabe
 - Pasien yang memiliki BMI tinggi
 - Pasien yang memiliki DiabetesPedigreeFunction tinggi
 - Pasien yang memiliki Age lebih tua
+
+<br><br>
 
 ## Data Preparation
 
@@ -183,7 +185,8 @@ Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan me
 
   <img src="image/f1_score.png" style="zoom: 40%;" /><br>
 
-Selanjutnya model Random Forest Classifier, akan dihitung *metrics* f1-score dan recall. <br>
+Selanjutnya model Random Forest Classifier, akan dihitung *metrics* f1-score dan recall. <br><br>
+
 <img src="image\Confusion_Matrix_untuk_Random_Forest.png" style="zoom:70%;" /><br>
 <img src="image\Nilai_Akurasi_Precision_Recall_F1.png" style="zoom:70%;" /><br>
 
