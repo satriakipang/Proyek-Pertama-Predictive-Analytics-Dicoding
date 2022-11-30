@@ -59,9 +59,8 @@ Pada berkas berisikan informasi pasien sebanyak 768 data dengan 9 kolom serta te
 | 75%	| 6.000000 | 140.250000 | 80.000000 | 32.000000 | 127.250000 | 36.600000 | 0.626250	| 41.000000 | 1.000000 |
 | max | 17.000000 | 199.000000 | 122.000000 | 99.000000 | 846.000000 | 67.100000 | 2.420000 | 81.000000 | 1.000000 |
 
-<br>
-#### Interpretasi Deskripsi statistik data
-Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nilai minimum yaitu 0. Hal tersebut tidak mungkin, sebab manusia tidak dapat mencapai nol untuk kadar glukosa, tekanan darah, ketebalan kulit, kadar insulin, dan BMI. Maka nilai nol pada kolom tersebut akan dihapus. <br>
+#### Interpretasi Deskripsi statistik data 
+Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nilai minimum yaitu 0. Hal tersebut tidak mungkin, sebab manusia tidak dapat mencapai nol untuk kadar glukosa, tekanan darah, ketebalan kulit, kadar insulin, dan BMI. Maka nilai nol pada kolom tersebut akan dihapus. <br><br><br>
 
 
 ### Berikut Visualisasi data dengan Boxplot: <br>
@@ -148,7 +147,7 @@ Melihat Hubungan Antara Numerical Features Dengan Fungsi Tujuan Yaitu Outcome.
 
 ## Modeling
 Algoritma pada *Machine Learning* yang digunakan antara lain : 
-- **K-Neighbors Classifier**, K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Pada penelitian ini merupakan masalah klasifikasi makan akan membandingkan 2 data. Proyek ini menggunakan [sklearn.neighbors.KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html?highlight=kneighborsclassifier#sklearn.neighbors.KNeighborsClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini yaitu `n_neighbors` = Jumlah k tetangga terdekat.
+- **K-Neighbors Classifier**, K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Pada penelitian ini merupakan masalah klasifikasi makan akan membandingkan 2 data. Proyek ini menggunakan [sklearn.neighbors.KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html?highlight=kneighborsclassifier#sklearn.neighbors.KNeighborsClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini yaitu `n_neighbors` = Jumlah k tetangga terdekat. Pada model ini  menggunakan parameter n_neighbors = 2, karena projek ini mengkalsifikasikan pasien terkena diabetes dab tidak terkena diabetes. 
 
 
 - **Random Forest Classifier**, merupakan salah satu algoritma populer yang digunakan karena kesederhanaannya dan memiliki stabilitas yang baik. Proyek ini menggunakan [sklearn.ensemble.RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html?highlight=sklearn+ensemble+randomforestclassifier#sklearn.ensemble.RandomForestClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah :
@@ -156,6 +155,7 @@ Algoritma pada *Machine Learning* yang digunakan antara lain :
      `n_estimators` = Jumlah tree pada forest.
      `max_depth` = Kedalaman maksimum setiap tree.
      `random_state` = Mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi.
+Pada model ini menggunakan parameter criterion = gini ,n_estimators=100, max_depth=9, random_state=44. 
 
 - **AdaBoost Classifier**, merupakan singkatan dari Adaptive Boosting Classifier. Algoritma ini bertujuan untuk memberikan bobot lebih pada observasi yang tidak tepat atau disebut weak classification. Proyek ini menggunakan [sklearn.ensemble.AdaBoostClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html?highlight=sklearn+ensemble+adaboostclassifier#sklearn.ensemble.AdaBoostClassifier) dengan memasukkan X_train dan y_train dalam membangun model. 
 
