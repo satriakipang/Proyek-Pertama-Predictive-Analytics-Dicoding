@@ -51,7 +51,7 @@ Pada berkas berisikan informasi pasien sebanyak 768 data dengan 9 kolom serta te
 | Pregnancies | Glucose | BloodPressure | SkinThickness | Insulin | BMI | DiabetesPedigreeFunction | Age| Outcome | 
 |---|----|---|---|---|---|---|---|---|
 | count |	768.000000 | 768.000000 | 768.000000 | 768.000000 | 768.000000 | 768.000000	| 768.000000 | 768.000000 |	768.000000 |
-| mean	3.845052	120.894531	69.105469	20.536458	79.799479	31.992578	0.471876	33.240885	0.348958 |
+| mean	| 3.845052 | 120.894531	| 69.105469 | 20.536458 | 79.799479 | 31.992578 | 0.471876 | 33.240885 | 0.348958 |
 | std	| 3.369578 | 31.972618 | 19.355807 | 15.952218 | 115.244002 | 7.884160 | 0.331329 | 11.760232 | 0.476951 |
 | min	| 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.078000 | 21.000000 | 0.000000 |
 | 25% | 1.000000 | 99.000000 | 62.000000 | 0.000000 | 0.000000 | 27.300000 | 0.243750 | 24.000000	| 0.000000 |
@@ -149,7 +149,8 @@ Melihat Hubungan Antara Numerical Features Dengan Fungsi Tujuan Yaitu Outcome.
 ## Modeling
 Algoritma pada *Machine Learning* yang digunakan antara lain : 
 - **K-Neighbors Classifier**, K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Pada penelitian ini merupakan masalah klasifikasi makan akan membandingkan 2 data. Proyek ini menggunakan [sklearn.neighbors.KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html?highlight=kneighborsclassifier#sklearn.neighbors.KNeighborsClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini yaitu `n_neighbors` = Jumlah k tetangga terdekat.
-    
+
+
 - **Random Forest Classifier**, merupakan salah satu algoritma populer yang digunakan karena kesederhanaannya dan memiliki stabilitas yang baik. Proyek ini menggunakan [sklearn.ensemble.RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html?highlight=sklearn+ensemble+randomforestclassifier#sklearn.ensemble.RandomForestClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah :
      `criterion` = Fungsi untuk mengukur kualitas split.
      `n_estimators` = Jumlah tree pada forest.
@@ -197,7 +198,16 @@ Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan me
 Selanjutnya model Random Forest Classifier, akan dihitung *metrics* f1-score dan recall. <br>
 
 <img src="image\Confusion_Matrix_untuk_Random_Forest.png" style="zoom:70%;" /><br><br>
-<img src="image\Nilai_Akurasi_Precision_Recall_F1.png" style="zoom:70%;" /><br><br><br>
+
+Akurasi Random Forest Classifier : 0.9238095238095239
+----------------------------------------------------------------------------------------------------
+Precision Random Forest Classifier : 0.9285714285714286
+----------------------------------------------------------------------------------------------------
+Recall Random Forest Classifier : 0.9285714285714286
+----------------------------------------------------------------------------------------------------
+F1 score Random Forest Classifier : 0.9285714285714286
+
+Berdasarkan Projek ini , metric yang digunakan adalah recall karena recall dapat mengecilkan false negatif sehingga model Random Forest Classifier dengan recall_Score sebesar 92 persen.
 
 ## Kesimpulan
 Kesimpulan dari proyek prediksi pasien diabetes dan tidak diabetes dengan menggunakan tiga model *Machine Learning*, yaitu bahwa diantara *K-Neighbors Regressor Classifier*, *Random Forest Classifier*, dan *AdaBoost Classifier*. Diperoleh bahwa algoritma *Random Forest Classifier* lebih baik dibandingkan yang lainnya. Hal ini dapat dilihat dari performance model yang tinggi dibandingkan algoritma yang lainnya. 
