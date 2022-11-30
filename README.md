@@ -46,42 +46,42 @@ Outcome |merepresentasikan hasil akhir 1 adalah diabetes dan 0 adalah Tidak diab
 
 Pada berkas berisikan informasi pasien sebanyak 768 data dengan 9 kolom serta terdapat 0 missing values dan 0 duplicated data.
 
-### Berikut rangkuman `statistik deskriptif` dari fitur dalam dataset: <br> <br>
+### Berikut rangkuman `statistik deskriptif` dari fitur dalam dataset: <br>
 <img src="image/statistik_deskriptif_numeric.png" style="zoom:150%;" /><br>
 
 #### Interpretasi Deskripsi statistik data
-Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nilai minimum yaitu 0. Hal tersebut tidak mungkin, sebab manusia tidak dapat mencapai nol untuk kadar glukosa, tekanan darah, ketebalan kulit, kadar insulin, dan BMI. Maka nilai nol pada kolom tersebut akan dihapus
+Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nilai minimum yaitu 0. Hal tersebut tidak mungkin, sebab manusia tidak dapat mencapai nol untuk kadar glukosa, tekanan darah, ketebalan kulit, kadar insulin, dan BMI. Maka nilai nol pada kolom tersebut akan dihapus. <br>
 <img src="image/statistik_deskriptif_numeric_revisi.png" style="zoom:150%;" /><br>
 
 
-### Berikut `Visualisasi` data dengan Boxplot: 
-<img src="image/Visualisasi _boxplot1.png" style="zoom:70%;" /> 
-<img src="image/Visualisasi _boxplot2.png" style="zoom:70%;" /> 
+### Berikut Visualisasi data dengan Boxplot: <br>
+<img src="image/Visualisasi _boxplot1.png" style="zoom:70%;" /> <br>
+<img src="image/Visualisasi _boxplot2.png" style="zoom:70%;" /> <br>
 <img src="image/Visualisasi _boxplot3.png" style="zoom:70%;" /> <br>
 
 #### Interpretasi Outlier pada Boxplot.
 - Pada boxplot Pregnancies, plot menunjukkan outlier untuk jumlah kehamilan 13,15, 16, dan 17, data tersebut tidak dihapus karena seorang wanita mungkin melahirkan 17 anak.
 - Pada boxplot Insulin, kadar insulin cukup berfluktuasi. Maka, tidak akan dianggap sebagai outlier
 - Pada boxplot DiabetesPedigreeFunction, nilainya bervariasi berdasarkan riwayat keluarga. Maka, tidak akan menghapusnya.
-- Pada boxplot Age, nilai umur terdapat outlier tetapi orang dengan usia seperti itu bisa ada. Maka, tidak akan dihapus.
+- Pada boxplot Age, nilai umur terdapat outlier tetapi orang dengan usia seperti itu bisa ada. Maka, tidak akan dihapus. <br>
 
 
-### Berikut `Visualisasi` data Categorical Features pada plot :
+### Berikut Visualisasi data Categorical Features pada plot : <br>
 <img src="image/Visualisasi _Categorical_Features1.png" style="zoom:70%;" /> 
 <img src="image/Visualisasi _Categorical_Features2.png" style="zoom:70%;" /><br>
 
 #### Interpretasi plot
-- Melihat hasil data Pregnancies dan tidak ada korelasinya maka kolom data Pregnancies di hapus.
+- Melihat hasil data Pregnancies dan tidak ada korelasinya maka kolom data Pregnancies di hapus. <br>
 
 
-### Berikut `Visualisasi` data Numerical Features pada histogram :
+### Berikut Visualisasi data Numerical Features pada histogram :
 <img src="image/Visualisasi _Numerical_Features1.png" style="zoom:70%;" /><br> 
 <img src="image/Visualisasi _Numerical_Features2.png" style="zoom:70%;" /><br>
 
 #### Interpretasi histogram
 - Beberapa kolom berdistribusi miring ke kanan
 - Distribusi kolom yang berdistribusi normal adalah Glucose, BloodPressure, SkinThickness dan BMI.
-- Distribusi harga miring ke kanan (right-skewed). adalah Insulin, DiabetesPedigreeFunction dan Age.
+- Distribusi harga miring ke kanan (right-skewed). adalah Insulin, DiabetesPedigreeFunction dan Age.<br>
 
 
 ### Multivariate Analysis
@@ -92,7 +92,7 @@ Melihat Hubungan Antara Numerical Features Dengan Fungsi Tujuan Yaitu Outcome.
 <img src="image/Multivariate_Analysis4.png" style="zoom:70%;" /><br>
 
 #### Interpertasi
-- Pada grafik perbandingan terdapat perbedaan yang terkena diabetes dan tidak diabetes, yaitu pada Glucose, BloodPressure, BMI, DiabetesPedigreeFunction, Age.
+- Pada grafik perbandingan terdapat perbedaan yang terkena diabetes dan tidak diabetes, yaitu pada Glucose, BloodPressure, BMI, DiabetesPedigreeFunction, Age.<br>
 
 
 ### Heat Map
@@ -137,7 +137,7 @@ Pada data tersebut kita bisa melihat bahwa ciri ciri pasien yang menderita diabe
 
 ## Modeling
 Algoritma pada *Machine Learning* yang digunakan antara lain : 
-- **K-Neighbors Classifier**, K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Pada penelitian ini merupakan masalah klasifikasi makan akan membandingkan 2 data. Proyek ini menggunakan [sklearn.neighbors.KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html?highlight=kneighborsclassifier#sklearn.neighbors.KNeighborsClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini yaitu n_neighbors` = Jumlah k tetangga terdekat.
+- **K-Neighbors Classifier**, K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Pada penelitian ini merupakan masalah klasifikasi makan akan membandingkan 2 data. Proyek ini menggunakan [sklearn.neighbors.KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html?highlight=kneighborsclassifier#sklearn.neighbors.KNeighborsClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini yaitu `n_neighbors` = Jumlah k tetangga terdekat.
     
 - **Random Forest Classifier**, merupakan salah satu algoritma populer yang digunakan karena kesederhanaannya dan memiliki stabilitas yang baik. Proyek ini menggunakan [sklearn.ensemble.RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html?highlight=sklearn+ensemble+randomforestclassifier#sklearn.ensemble.RandomForestClassifier) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah :
      `criterion` = Fungsi untuk mengukur kualitas split..
@@ -150,10 +150,10 @@ Algoritma pada *Machine Learning* yang digunakan antara lain :
 
 
 ## Evaluation
-Pada proyek ini model dibuat untuk mengklasifikasikan pasien terkena diabetes dan tidak terkena diabetes. Hasil evaluasi diperoleh bahwa model yang memiliki Performance tertinggi iyalah Random Forest Classifier. 
+Pada proyek ini model dibuat untuk mengklasifikasikan pasien terkena diabetes dan tidak terkena diabetes. Hasil evaluasi diperoleh bahwa model yang memiliki Performance tertinggi iyalah Random Forest Classifier. <br>
 <img src="image\Performance_Models.png" style="zoom:70%;" /><br>
 
-Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan mengenai *confusion matrix* terdapat empat nilai, yakni *true positive*,  *true negative*, *false positive* dan *false negative*. Untuk lebih jelasnya perhatikan gambar dibawah ini. 
+Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan mengenai *confusion matrix* terdapat empat nilai, yakni *true positive*,  *true negative*, *false positive* dan *false negative*. Untuk lebih jelasnya perhatikan gambar dibawah ini. <br>
 
 <img src="image\cm1.jpg" style="zoom:50%;" /><br>
 
@@ -163,7 +163,7 @@ Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan me
 
 - *Precision*
 
-  *Metrics* ini mengukur tingkat ketepatan antara informasi yang diminta oleh pengguna dengan jawaban yang diberikan oleh sistem. Untuk menghitung nilai dari *precision* dapat dilihat pada formula di bawah ini. 
+  *Metrics* ini mengukur tingkat ketepatan antara informasi yang diminta oleh pengguna dengan jawaban yang diberikan oleh sistem. Untuk menghitung nilai dari *precision* dapat dilihat pada formula di bawah ini. <br>
 
   <img src="image\precision.png" style="zoom:80%;" /><br>
 
@@ -171,7 +171,7 @@ Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan me
 
 - *Recall*
 
-  *Metrics* ini mengukur tingkat keberhasilan sistem dalam menemukan kembali sebuah informasi. Untuk menghitung nilai dari recall dapat dilihat pada formula di bawah ini. 
+  *Metrics* ini mengukur tingkat keberhasilan sistem dalam menemukan kembali sebuah informasi. Untuk menghitung nilai dari recall dapat dilihat pada formula di bawah ini. <br>
 
   <img src="image\recall.png" style="zoom:80%;" /><br>
 
@@ -179,7 +179,7 @@ Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan me
 
 - *F1-score*
 
-  *Metrics* ini merupakan rata-rata harmonik dari precission dan recall. Untuk menghitung nilai dari *f1-score* dapat dilihat pada formula di bawah ini. 
+  *Metrics* ini merupakan rata-rata harmonik dari precission dan recall. Untuk menghitung nilai dari *f1-score* dapat dilihat pada formula di bawah ini.<br>
 
   <img src="image/f1_score.png" style="zoom: 40%;" /><br>
 
