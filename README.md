@@ -48,28 +48,20 @@ Outcome |merepresentasikan hasil akhir 1 adalah diabetes dan 0 adalah Tidak diab
 Pada berkas berisikan informasi pasien sebanyak 768 data dengan 9 kolom serta terdapat 0 missing values dan 0 duplicated data.
 
 ### Berikut rangkuman `statistik deskriptif` dari fitur dalam dataset: <br>
-
 | Pregnancies | Glucose | BloodPressure | SkinThickness | Insulin | BMI | DiabetesPedigreeFunction | Age| Outcome | 
-+--+--+--+--+--+--+--+--+--+
-count |	768.000000 | 768.000000 | 768.000000 | 768.000000 | 768.000000 | 768.000000	| 768.000000 | 768.000000 |	768.000000
-+--+--+--+--+--+--+--+--+--+
-mean	3.845052	120.894531	69.105469	20.536458	79.799479	31.992578	0.471876	33.240885	0.348958
-+--+--+--+--+--+--+--+--+--+
-std	| 3.369578 | 31.972618 | 19.355807 | 15.952218 | 115.244002 | 7.884160 | 0.331329 | 11.760232 | 0.476951
-+--+--+--+--+--+--+--+--+--+
-min	| 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.078000 | 21.000000 | 0.000000
-+--+--+--+--+--+--+--+--+--+
-25% | 1.000000 | 99.000000 | 62.000000 | 0.000000 | 0.000000 | 27.300000 | 0.243750 | 24.000000	| 0.000000
-+--+--+--+--+--+--+--+--+--+
-50% | 3.000000 | 117.000000 | 72.000000 | 23.000000 | 30.500000 | 32.000000 | 0.372500 | 29.000000 | 0.000000
-+--+--+--+--+--+--+--+--+--+
-75%	| 6.000000 | 140.250000 | 80.000000 | 32.000000 | 127.250000 | 36.600000 | 0.626250	| 41.000000 | 1.000000
-+--+--+--+--+--+--+--+--+--+
-max | 17.000000 | 199.000000 | 122.000000 | 99.000000 | 846.000000 | 67.100000 | 2.420000 | 81.000000 | 1.000000
-+--+--+--+--+--+--+--+--+--+
+|---|----|---|---|---|---|---|---|---|
+| count |	768.000000 | 768.000000 | 768.000000 | 768.000000 | 768.000000 | 768.000000	| 768.000000 | 768.000000 |	768.000000 |
+| mean	3.845052	120.894531	69.105469	20.536458	79.799479	31.992578	0.471876	33.240885	0.348958 |
+| std	| 3.369578 | 31.972618 | 19.355807 | 15.952218 | 115.244002 | 7.884160 | 0.331329 | 11.760232 | 0.476951 |
+| min	| 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.078000 | 21.000000 | 0.000000 |
+| 25% | 1.000000 | 99.000000 | 62.000000 | 0.000000 | 0.000000 | 27.300000 | 0.243750 | 24.000000	| 0.000000 |
+| 50% | 3.000000 | 117.000000 | 72.000000 | 23.000000 | 30.500000 | 32.000000 | 0.372500 | 29.000000 | 0.000000 |
+| 75%	| 6.000000 | 140.250000 | 80.000000 | 32.000000 | 127.250000 | 36.600000 | 0.626250	| 41.000000 | 1.000000 |
+| max | 17.000000 | 199.000000 | 122.000000 | 99.000000 | 846.000000 | 67.100000 | 2.420000 | 81.000000 | 1.000000 |
+
+<br>
 #### Interpretasi Deskripsi statistik data
 Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nilai minimum yaitu 0. Hal tersebut tidak mungkin, sebab manusia tidak dapat mencapai nol untuk kadar glukosa, tekanan darah, ketebalan kulit, kadar insulin, dan BMI. Maka nilai nol pada kolom tersebut akan dihapus. <br>
-<img src="image/statistik_deskriptif_numeric_revisi.png" style="zoom:150%;" /><br><br><br>
 
 
 ### Berikut Visualisasi data dengan Boxplot: <br>
@@ -123,27 +115,18 @@ Melihat Hubungan Antara Numerical Features Dengan Fungsi Tujuan Yaitu Outcome.
 ## Data Preparation
 
 - Mengatasi data kosong <br>
-+--+--+
+
 | missing | value |
-+--+--+
+|---|----|
 | Pregnancies | 0 |
-+--+--+
 | Glucose |	0 |
-+--+--+
 | BloodPressure | 0 |
-+--+--+
 | SkinThickness | 0 |
-+--+--+
 | Insulin |	0 |
-+--+--+
 | BMI |	0 |
-+--+--+
 | DiabetesPedigreeFunction | 0 |
-+--+--+
 | Age |	0 |
-+--+--+
 | Outcome |	0 |
-+--+--+
 <br>
   Tahapan ini bertujuan untuk mengisi data yang tidak lengkap atau data kosong. 
 
