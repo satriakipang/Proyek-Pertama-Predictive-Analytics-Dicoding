@@ -105,7 +105,7 @@ Melihat Hubungan Antara Numerical Features Dengan Fungsi Tujuan Yaitu Outcome.
 
 
 ### Heat Map
-Pada data numerik, digunakan heatmap yang bertujuan untuk memvisualisasikan korelasi antara fitur 'Glucose',	'BloodPressure',	'SkinThickness',	'Insulin',	'BMI',	'DiabetesPedigreeFunction',	 dan 'Age' dengan data "Outcome" agar lebih mudah untuk dilihat dan dipahami.
+Pada data numerik, digunakan heatmap yang bertujuan untuk memvisualisasikan korelasi antara fitur 'Glucose',	'BloodPressure',	'SkinThickness',	'Insulin',	'BMI',	'DiabetesPedigreeFunction',	 dan 'Age' dengan data "Outcome" agar lebih mudah untuk dilihat dan dipahami. <br>
 <img src="image/Heat_Map.png" style="zoom:70%;" /><br>
 Pada hasil heat map dapat dilihat bahwa diabetes (outcome) memiliki korelasi yang besar terhadap glucose, bmi dan age.<br><br><br>
 
