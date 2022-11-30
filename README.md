@@ -75,12 +75,12 @@ Pada Kolom Glucose, BloodPressure, SkinThickness, Insulin, dan BMI memiliki nila
 - Pada boxplot Age, nilai umur terdapat outlier tetapi orang dengan usia seperti itu bisa ada. Maka, tidak akan dihapus. <br><br><br>
 
 
+
 ### Berikut Visualisasi data Categorical Features pada plot : <br>
 <img src="image/Visualisasi _Categorical_Features1.png" style="zoom:70%;" /> 
 <img src="image/Visualisasi _Categorical_Features2.png" style="zoom:70%;" />
+Pada Grafik Pregnancies dapat dilihat bahwa Jumlah kehamilan terbanyak adalah sebanyak 1. Lalu pada grafik  Outcome, data yang terkena diabetes dan tidak terkena diabetes tidak seimbang. Data yang terkena diabetes memiliki jumlah yang terbanyak dibandingkan yang tidak terkena diabetes. <br><br><br>
 
-#### Interpretasi plot
-- Melihat hasil data Pregnancies dan tidak ada korelasinya maka kolom data Pregnancies di hapus. <br><br><br>
 
 
 ### Berikut Visualisasi data Numerical Features pada histogram :
@@ -105,10 +105,9 @@ Melihat Hubungan Antara Numerical Features Dengan Fungsi Tujuan Yaitu Outcome.
 
 
 ### Heat Map
+Pada data numerik, digunakan heatmap yang bertujuan untuk memvisualisasikan korelasi antara fitur 'Glucose',	'BloodPressure',	'SkinThickness',	'Insulin',	'BMI',	'DiabetesPedigreeFunction',	 dan 'Age' dengan data "Outcome" agar lebih mudah untuk dilihat dan dipahami.
 <img src="image/Heat_Map.png" style="zoom:70%;" /><br>
-
-#### Interpertasi
-- Pada hasil heat map dapat dilihat bahwa diabetes berkorelasi dengan glucose, bmi dan age.<br><br><br>
+Pada hasil heat map dapat dilihat bahwa diabetes (outcome) memiliki korelasi yang besar terhadap glucose, bmi dan age.<br><br><br>
 
 
 ## Data Preparation
@@ -128,12 +127,6 @@ Melihat Hubungan Antara Numerical Features Dengan Fungsi Tujuan Yaitu Outcome.
 | Outcome |	0 |
 <br>
   Tahapan ini bertujuan untuk mengisi data yang tidak lengkap atau data kosong. 
-
-
-- Mengatasi duplicated data <br>
- <img src="image\duplicated_data.png" style="zoom:70%;" /><br>
- Hasil yang di peroleh adalah tidak ada data yang duplicated
-
 
 - Balancing Dataset <br>
  <img src="image\Balancing_Dataset.png" style="zoom:70%;" /><br>
@@ -220,6 +213,5 @@ Pada projek ini kita memproleh informasi ciri ciri atau faktor yang membuat pasi
 # Referensi
 
 1. [Dicoding](https://www.dicoding.com/academies/319/tutorials/16979?from=17053) (2021). *Machine learning Terapan*
-2. [Scikit-learn](https://scikit-learn.org/). *Documentation*
-3. [Imbalanced-learn](https://imbalanced-learn.org/stable/). *Documentation*
-4. [Kemenkes RI](https://p2ptm.kemkes.go.id/informasi-p2ptm/penyakit-diabetes-melitus) 
+2. [Imbalanced-learn](https://imbalanced-learn.org/stable/). *Documentation*
+3. [Kemenkes RI](https://p2ptm.kemkes.go.id/informasi-p2ptm/penyakit-diabetes-melitus) 
