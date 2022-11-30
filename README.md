@@ -199,13 +199,10 @@ Selanjutnya model Random Forest Classifier, akan dihitung *metrics* f1-score dan
 
 <img src="image\Confusion_Matrix_untuk_Random_Forest.png" style="zoom:70%;" /><br><br>
 
-Akurasi Random Forest Classifier : 0.9238095238095239
-----------------------------------------------------------------------------------------------------
-Precision Random Forest Classifier : 0.9285714285714286
-----------------------------------------------------------------------------------------------------
-Recall Random Forest Classifier : 0.9285714285714286
-----------------------------------------------------------------------------------------------------
-F1 score Random Forest Classifier : 0.9285714285714286
+Akurasi Random Forest Classifier : 0.9238095238095239 <br>
+Precision Random Forest Classifier : 0.9285714285714286 <br>
+Recall Random Forest Classifier : 0.9285714285714286 <br> 
+F1 score Random Forest Classifier : 0.9285714285714286 <br>
 
 Berdasarkan Projek ini , metric yang digunakan adalah recall karena recall dapat mengecilkan false negatif sehingga model Random Forest Classifier dengan recall_Score sebesar 92 persen.
 
