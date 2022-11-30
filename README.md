@@ -1,6 +1,6 @@
 # Laporan Proyek Machine Learning - Fransiskus Ricardo
 
-## Domain Proyek
+## Domain Kesehatan
 
 Perkembangan *Machine Learning* yang sangat pesat dapat membantu manusia dalam menyelesaikan permasalahan yang rumit dengan komputasi komputer. Pada proyek ini penulis ingin menggunakan *Machine Learning* untuk memprediksi diabetes pada pasien. 
 
@@ -183,9 +183,9 @@ Sebelum menghitung Accuracy, Precision, Recall, dan F1-score. Akan dijelaskan me
 
   *Metrics* ini merupakan rata-rata harmonik dari precission dan recall. Untuk menghitung nilai dari *f1-score* dapat dilihat pada formula di bawah ini.<br>
 
-  <img src="image/f1_score.png" style="zoom: 40%;" /><br>
+  <img src="image/f1_score.png" style="zoom: 40%;" /><br><br><br>
 
-Selanjutnya model Random Forest Classifier, akan dihitung *metrics* f1-score dan recall. <br><br>
+Selanjutnya model Random Forest Classifier, akan dihitung *metrics* f1-score dan recall. <br>
 
 <img src="image\Confusion_Matrix_untuk_Random_Forest.png" style="zoom:70%;" /><br>
 <img src="image\Nilai_Akurasi_Precision_Recall_F1.png" style="zoom:70%;" /><br><br><br>
